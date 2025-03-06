@@ -1,0 +1,29 @@
+.navbar{
+    padding: 2rem;
+    background-color: #2cceff;
+}
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+.hero{
+    background-color: white;
+    min-height: 450px;
+    text-align: center;
+}
+.hero-principal{
+    padding: 3rem;
+}
+
+.hero-imagen-perfil{
+    width: 600px;
+    height: 400px;
+    margin: gray;
+}
+/*medias queris adaptativas */
+@media screen and (max-width: 767px){
+    .navbar-brand{
+        display: none;
+    }
+}
+    
