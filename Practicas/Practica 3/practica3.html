@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario obligatorio (solo usuario y contraseña)</title>
+
+    <script>
+        function showAlert(event) {
+            event.preventDefault();
+            alert("Formulario enviado");
+            
+        }
+    </script>
+
+</head>
+<body>
+    <form action="" method="get" onsubmit="showAlert(event)">
+        <p>
+            <label for="id-user">Usuario</label>
+            <input type="text" name="user" id="id-user">
+
+            <label>
+                Contraseña
+                <input type="password" name="password" id="id-password">
+            </label>
+        </p>
+        <p>
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+        </p>
+    </form>
+    <footer>
+        <p>Desarrollado por Luis Angel Ceron Castro, Ingeniería en sistemas computacionales 6to A</p>
+</body>
+</html>
