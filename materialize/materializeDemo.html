@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo de Materialize CSS</title>
+  <!-- Importar Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Importar Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Importar nuestro CSS personalizado -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="blue darken-2">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Materialize Demo</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#features">Características</a></li>
+        <li><a href="#components">Componentes</a></li>
+        <li><a href="#gallery">Galería</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Sidenav para móviles -->
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="#features">Características</a></li>
+    <li><a href="#components">Componentes</a></li>
+    <li><a href="#gallery">Galería</a></li>
+    <li><a href="#contact">Contacto</a></li>
+  </ul>
+
+  <!-- Hero Section -->
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center blue-text text-darken-2">Materialize CSS</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Un framework CSS moderno basado en Material Design</h5>
+      </div>
+      <div class="row center">
+        <a href="#components" class="btn-large waves-effect waves-light blue darken-2">Ver componentes</a>
+      </div>
+      <br><br>
+    </div>
+  </div>
+
+  <!-- Features Section -->
+  <div id="features" class="section grey lighten-4">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center blue-text text-darken-2"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">Desarrollo rápido</h5>
+            <p class="light">Materialize proporciona componentes listos para usar que aceleran el desarrollo de tu sitio web. Menos tiempo escribiendo CSS, más tiempo creando.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center blue-text text-darken-2"><i class="material-icons">devices</i></h2>
+            <h5 class="center">Responsive Design</h5>
+            <p class="light">Basado en el sistema de cuadrícula de 12 columnas, tu sitio se adaptará perfectamente a cualquier tamaño de pantalla, desde móviles hasta pantallas grandes.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center blue-text text-darken-2"><i class="material-icons">settings</i></h2>
+            <h5 class="center">Fácil de usar</h5>
+            <p class="light">Una documentación detallada y clases intuitivas hacen que Materialize sea accesible tanto para principiantes como para desarrolladores experimentados.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Components Section -->
+  <div id="components" class="section white">
+    <div class="container">
+      <h3 class="center blue-text text-darken-2">Componentes populares</h3>
+      
+      <!-- Cards -->
+      <h5>Tarjetas</h5>
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="/api/placeholder/400/250" alt="placeholder">
+              <span class="card-title">Diseño con tarjetas</span>
+              <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+            </div>
+            <div class="card-content">
+              <p>Las tarjetas son una manera conveniente de mostrar contenido compuesto por diferentes tipos de objetos.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">Ver más</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col s12 m4">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Tarjeta con color</span>
+              <p>Puedes aplicar fácilmente los colores de Materialize para personalizar tus tarjetas y crear acentos visuales en tu sitio.</p>
+            </div>
+            <div class="card-action">
+              <a href="#" class="yellow-text">Acción 1</a>
+              <a href="#" class="yellow-text">Acción 2</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="/api/placeholder/400/250" alt="placeholder">
+            </div>
+            <div class="card-content">
+              <span class="card-title">Tarjeta básica</span>
+              <p>Una simple tarjeta para mostrar información de manera elegante.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Buttons -->
+      <h5>Botones</h5>
+      <div class="row">
+        <div class="col s12">
+          <a class="waves-effect waves-light btn blue"><i class="material-icons left">cloud</i>Botón</a>
+          <a class="waves-effect waves-light btn-large green"><i class="material-icons right">edit</i>Botón grande</a>
+          <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+          <a class="btn-floating btn-large pulse cyan"><i class="material-icons">notifications</i></a>
+          <a class="waves-effect waves-light btn-small orange">Botón pequeño</a>
+          <a class="waves-effect waves-teal btn-flat">Botón plano</a>
+        </div>
+      </div>
+      
+      <!-- Collection -->
+      <h5>Colecciones</h5>
+      <div class="row">
+        <div class="col s12 m6">
+          <ul class="collection">
+            <li class="collection-item">Lista básica - Item 1</li>
+            <li class="collection-item">Lista básica - Item 2</li>
+            <li class="collection-item">Lista básica - Item 3</li>
+            <li class="collection-item">Lista básica - Item 4</li>
+          </ul>
+        </div>
+        
+        <div class="col s12 m6">
+          <div class="collection">
+            <a href="#!" class="collection-item">Item con enlace 1</a>
+            <a href="#!" class="collection-item active">Item activo</a>
+            <a href="#!" class="collection-item">Item con enlace 3</a>
+            <a href="#!" class="collection-item">Item con enlace 4</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Form Elements -->
+      <h5>Elementos de formulario</h5>
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="first_name" type="text">
+              <label for="first_name">Nombre</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="last_name" type="text">
+              <label for="last_name">Apellido</label>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" type="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1">Mensaje</label>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col s12">
+              <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
+                <i class="material-icons right">send</i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gallery with Carousel -->
+  <div id="gallery" class="section blue lighten-5">
+    <div class="container">
+      <h3 class="center blue-text text-darken-2">Galería</h3>
+      <div class="carousel">
+        <a class="carousel-item" href="#one!"><img src="/api/placeholder/250/250" alt="placeholder"></a>
+        <a class="carousel-item" href="#two!"><img src="/api/placeholder/250/250" alt="placeholder"></a>
+        <a class="carousel-item" href="#three!"><img src="/api/placeholder/250/250" alt="placeholder"></a>
+        <a class="carousel-item" href="#four!"><img src="/api/placeholder/250/250" alt="placeholder"></a>
+        <a class="carousel-item" href="#five!"><img src="/api/placeholder/250/250" alt="placeholder"></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Parallax Section -->
+  <div class="parallax-container">
+    <div class="parallax"><img src="/api/placeholder/1600/900" alt="placeholder"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col s12 center">
+          <h4 class="white-text">Materialize hace que el diseño web sea sencillo</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div id="contact" class="section white">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 center">
+          <h3 class="blue-text text-darken-2">Contacto</h3>
+          <p class="left-align">Si tienes alguna pregunta sobre Materialize CSS o quieres saber más sobre cómo implementarlo en tu proyecto, no dudes en contactarnos.</p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col s12 m8 offset-m2">
+          <div class="card-panel grey lighten-4">
+            <form>
+              <div class="row">
+                <div class="input-field col s12 m6">
+                  <input id="contact_name" type="text">
+                  <label for="contact_name">Nombre</label>
+                </div>
+                <div class="input-field col s12 m6">
+                  <input id="contact_email" type="email" class="validate">
+                  <label for="contact_email">Email</label>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="input-field col s12">
+                  <textarea id="contact_message" class="materialize-textarea"></textarea>
+                  <label for="contact_message">Mensaje</label>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col s12 center-align">
+                  <button class="btn-large waves-effect waves-light blue darken-2" type="submit">Enviar mensaje
+                    <i class="material-icons right">send</i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="page-footer blue darken-2">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Sobre Materialize</h5>
+          <p class="grey-text text-lighten-4">Materialize es un framework front-end moderno y responsivo basado en Material Design. Creado y diseñado por Google, Material Design es un lenguaje de diseño que combina los principios clásicos del diseño exitoso junto con la innovación y la tecnología.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Enlaces</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#features">Características</a></li>
+            <li><a class="grey-text text-lighten-3" href="#components">Componentes</a></li>
+            <li><a class="grey-text text-lighten-3" href="#gallery">Galería</a></li>
+            <li><a class="grey-text text-lighten-3" href="#contact">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2025 Ejemplo de Materialize
+      <a class="grey-text text-lighten-4 right" href="#!">Más enlaces</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Importar jQuery y JavaScript de Materialize -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  
+  <!-- Inicializar componentes de Materialize -->
+  <script>
+    $(document).ready(function(){
+      // Inicializar sidenav
+      $('.sidenav').sidenav();
+      
+      // Inicializar carousel
+      $('.carousel').carousel({
+        indicators: true,
+        fullWidth: false,
+        duration: 200
+      });
+      setInterval(function() {
+        $('.carousel').carousel('next');
+      }, 4000);
+      
+      // Inicializar parallax
+      $('.parallax').parallax();
+      
+      // Inicializar tooltips
+      $('.tooltipped').tooltip();
+      
+      // Animar el desplazamiento suave
+      $('a[href*="#"]')
+        .not('[href="#"]')
+        .not('[href="#0"]')
+        .click(function(event) {
+          if (
+            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && 
+            location.hostname == this.hostname
+          ) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+              event.preventDefault();
+              $('html, body').animate({
+                scrollTop: target.offset().top
+              }, 800);
+            }
+          }
+        });
+    });
+  </script>
+</body>
+</html>

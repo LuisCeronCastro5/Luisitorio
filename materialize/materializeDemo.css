@@ -1,0 +1,154 @@
+/* Estilos personalizados para la demostración de Materialize CSS */
+
+/* Ajustes generales de secciones */
+.section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  /* Personalización de bloques de iconos */
+  .icon-block {
+    padding: 0 15px;
+  }
+  
+  .icon-block .material-icons {
+    font-size: 48px;
+  }
+  
+  /* Ajuste del logo en la barra de navegación */
+  nav .brand-logo {
+    padding-left: 15px;
+  }
+  
+  /* Personalización del carrusel */
+  .carousel {
+    height: 400px;
+    margin-bottom: 20px;
+  }
+  
+  /* Los elementos del carrusel necesitan un ajuste para verse bien */
+  .carousel .carousel-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .carousel .carousel-item img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Configuración del contenedor para efecto parallax */
+  .parallax-container {
+    height: 300px;
+  }
+  
+  /* Ajustes para títulos */
+  h3.center, h4.center, h5.center {
+    margin-bottom: 30px;
+  }
+  
+  /* Estilos para secciones específicas */
+  #index-banner {
+    background-color: #fff;
+  }
+  
+  /* Personalización de botones */
+  .btn, .btn-large, .btn-small {
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+  
+  /* Tarjetas con altura mínima para uniformidad */
+  .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card .card-content {
+    flex-grow: 1;
+  }
+  
+  /* Estilos para dispositivos móviles */
+  @media only screen and (max-width: 992px) {
+    .carousel {
+      height: 300px;
+    }
+    
+    .parallax-container {
+      height: 200px;
+    }
+    
+    /* El logo en dispositivos pequeños */
+    nav .brand-logo {
+      font-size: 1.6rem;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .carousel {
+      height: 200px;
+    }
+    
+    /* Ajustes de espaciado para móviles */
+    .section {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+    
+    /* Reducir tamaño de título en móviles */
+    h1.header {
+      font-size: 2.5rem;
+    }
+  }
+  
+  /* Animaciones adicionales para elementos interactivos */
+  .btn, .btn-large, .btn-small, .btn-floating {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn:hover, .btn-large:hover, .btn-small:hover {
+    transform: translateY(-2px);
+  }
+  
+  .btn-floating:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Personalización de formularios */
+  .input-field input:focus + label,
+  .input-field textarea:focus + label {
+    color: #1976d2 !important; /* blue darken-2 */
+  }
+  
+  .input-field input:focus,
+  .input-field textarea:focus {
+    border-bottom: 1px solid #1976d2 !important;
+    box-shadow: 0 1px 0 0 #1976d2 !important;
+  }
+  
+  /* Personalización del footer */
+  .page-footer {
+    margin-top: 0;
+  }
+  
+  .footer-copyright {
+    overflow: hidden;
+  }
+  
+  /* Mejoras para el efecto de hover en las colecciones */
+  .collection a.collection-item:not(.active):hover {
+    background-color: #e3f2fd; /* blue lighten-5 */
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Mejora visual para las tarjetas */
+  .card {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transform: translateY(-2px);
+  }
