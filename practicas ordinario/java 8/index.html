@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RETRO_CRUD</title>
+</head>
+<body>
+  <h2>Formulario Vehículo</h2>
+  <input id="id" placeholder="ID"><br>
+  <input id="marca" placeholder="Marca"><br>
+  <input id="modelo" placeholder="Modelo"><br>
+  <input id="placa" placeholder="Placa"><br>
+  <input id="color" placeholder="Color"><br>
+  <input id="año" placeholder="Año"><br><br>
+
+  <button onclick="crear()">Crear</button>
+  <button onclick="leer()">Leer</button>
+  <button onclick="actualizar()">Actualizar</button>
+  <button onclick="eliminar()">Eliminar</button>
+
+  <pre id="resultado"></pre>
+
+  <script>
+    const getData = () => ({
+      id: document.getElementById('id').value,
+      marca: document.getElementById('marca').value,
+      modelo: document.getElementById('modelo').value,
+      placa: document.getElementById('placa').value,
+      color: document.getElementById('color').value,
+      año: document.getElementById('año').value
+    });
+
+    function crear() {
+      fetch('/crear', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(getData())
+      }).then(r => r.text()).then(alert);
+    }
+
+    function leer() {
+      fetch('/leer')
+        .then(r => r.json())
+        .then(data => {
+          document.getElementById('resultado').textContent = JSON.stringify(data, null, 2);
+        });
+    }
+
+    function actualizar() {
+      const id = document.getElementById('id').value;
+      fetch('/actualizar/' + id, {
+        method: 'PUT',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(getData())
+      }).then(r => r.text()).then(alert);
+    }
+
+    function eliminar() {
+      const id = document.getElementById('id').value;
+      fetch('/eliminar/' + id, { method: 'DELETE' })
+        .then(r => r.text()).then(alert);
+    }
+  </script>
+</body>
+</html>
